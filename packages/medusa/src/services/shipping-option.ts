@@ -252,7 +252,7 @@ class ShippingOptionService extends TransactionBaseService<ShippingOptionService
    */
   async createShippingMethod(
     optionId: string,
-    data: object,
+    data: Record<string, unknown>,
     config: CreateShippingMethodDto
   ): Promise<ShippingMethod> {
     return await this.atomicPhase_(async (manager) => {
@@ -681,7 +681,7 @@ class ShippingOptionService extends TransactionBaseService<ShippingOptionService
    */
   async getPrice_(
     option: ShippingOption,
-    data: object,
+    data: Record<string, unknown>,
     cart: Cart | Order | undefined
   ): Promise<number> {
     if (option.price_type === "calculated") {
