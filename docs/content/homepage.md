@@ -58,6 +58,7 @@ Medusa provides 2 starter storefronts, one built with [Next.js](./starters/nextj
 
 Alternatively, you can build your own storefront with any frontend framework of your choice just by connecting to your server with the [Storefront REST APIs](https://docs.medusajs.com/api/store/).
 
+
 ## What’s Next 🚀
 
 - Customize your Medusa server by creating your own [endpoints](./advanced/backend/endpoints/add-storefront.md), [services](./advanced/backend/services/create-service.md), and [subscribers](./advanced/backend/subscribers/create-subscriber.md).
